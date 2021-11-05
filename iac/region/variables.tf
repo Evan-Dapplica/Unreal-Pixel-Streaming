@@ -7,12 +7,12 @@
 
 #CHANGE: Set your forked path here for your GitHub repo (and be sure to check in changes as scripts pull resources from GitHub)
 variable "gitpath" {
-  default = "https://github.com/Azure/Unreal-Pixel-Streaming/"
+  default = "https://github.com/Evan-Dapplica/Unreal-Pixel-Streaming/"
 }
 
 #The name of the Unreal 3D App, (i.e., PixelStreamingDemo.exe without the .exe at the end)
 variable "pixel_stream_application_name" {
-  default = "PixelStreamingDemo"
+  default = "Meta06"
 }
 
 #Resolution width and height for the 3D App to run (smaller resolutions can fit more streams per GPU and/or a higher FPS)
@@ -25,7 +25,7 @@ variable "resolutionHeight" {
 
 #Frames Per Second desired for the 3D app (-1 means default 60 fps limit. Use 30, 60, etc..)
 variable "fps" {
-  default = -1
+  default = 30
 }
 
 #Number of Virtual Machine Scale Set nodes scaled out on the VMSS cluster (1 stream per GPU VM by default)
